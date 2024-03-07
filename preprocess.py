@@ -27,13 +27,9 @@ data=data.drop(data[data.number_stories == (0)].index)
 data.loc[:,"general_construction"] = data.loc[:,"general_construction"].fillna(0) #replace Nan row with 0
 data=data.drop(data[data.general_construction == (0)].index)
 
-
-
-data.loc[:,"view_type"] = data.loc[:,"view_type"].fillna(0) #replace Nan row with 0
-data=data.drop(data[data.view_type == (0)].index)
+data.loc[:,"view_type"] = data.loc[:,"view_type"].fillna("N") #replace Nan row with 0
 
 data.loc[:, "type_heater"] = data.loc[:,"type_heater"].fillna("N") #replace NAN of type_heater with N for unknown
-
 
 
 for i in range (7,17):
