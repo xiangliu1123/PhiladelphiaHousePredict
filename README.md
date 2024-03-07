@@ -1,7 +1,9 @@
 Predictive Modeling of House Prices
 Introduction
 This project aims to develop a predictive model for house prices using various machine learning algorithms. The process involves data preprocessing, feature engineering, model development, and evaluation to select the best-performing model.
-The dataset was collet from https://www.phila.gov/property/data/.Feature extract "basement", "category_code", "exterior_condition", "garage_spaces", "interior_condition", "parcel_shape", "total_area", "total_livable_area","number_of_bathrooms","number_of_bedrooms","number_of_rooms","number_stories", "general_construction","taxable_land",street_code","view_type","quality_grade","year_built", "zip_code", "lat", "lng" and "market_value" as  target variable
+The dataset was collet from https://www.phila.gov/property/data/. The dataset contain over 500,000 data with and 35 feature. There are 21 features extract "basement", "category_code", "exterior_condition", "garage_spaces", "interior_condition", "parcel_shape", "total_area", "total_livable_area","number_of_bathrooms","number_of_bedrooms","number_of_rooms","number_stories", "general_construction","taxable_land",street_code","view_type","year_built", "zip_code", "lat", "lng" and "market_value" as  target variable.
+
+
 
 Feature Engineering
 To enhance the model's predictive capability, we engineered new features from the existing dataset. This included creating interaction terms that capture the relationships between different house attributes, transforming variables to better align with normal distributions, and extracting meaningful information that could impact house prices, such as the area-to-room ratio or the age of the property from the year built.
