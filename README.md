@@ -33,77 +33,79 @@ This project aims to develop a predictive model for house prices using various m
 ### Saving Processed Data:
 
 - The cleaned and processed dataset was saved to a new CSV file, `preprocess_data.csv`.
-Exterior_condition:
-4.0 = Average 
-3.0 = Above Average
-5.0 = Below Average
-2.0 = Newer Construction / Rehabbed
-7.0 = Sealed / Structurally Compromised
-6.0 = Vacant
-0.0 = Not Applicable
 
-parcel_shape:
-E = Rectangular
-A = Other than a square, rectangular or triangle
-B = Curves, narrow portions, long access driveways
-C = Triangular
-N = Unkown
-D = Long and narrow
+### categorical data analysis:
+#### Exterior_condition:
+- 4.0 = Average 
+- 3.0 = Above Average
+- 5.0 = Below Average
+- 2.0 = Newer Construction / Rehabbed
+- 7.0 = Sealed / Structurally Compromised
+- 6.0 = Vacant
+- 0.0 = Not Applicable
 
-
-Basements：
-K = Unknown
-D = Full – Unknown Finish
-F = Partial - Semi-Finished 
-H = Partial - Unknown Finish
-C = Full - Unfinished
-A = Full - Finished
-N = No Basement
-E = Partial - Finished
-J = Unknown Size - Unfinished
-G = Partial - Unfinished
-B = Full - Semi-Finished
-I = Unknown Size - Finished 
+#### Parcel_shape:
+- E = Rectangular
+- A = Other than a square, rectangular or triangle
+- B = Curves, narrow portions, long access driveways
+- C = Triangular
+- N = Unkown
+- D = Long and narrow
 
 
-Category_code:
-1 = Single Family
-2 = Multi Family
-3 = Mixed Use
-4 = Commercial
-5 = Industrial
-6 = Vacant Land
+#### Basements：
+- K = Unknown
+- D = Full – Unknown Finish
+- F = Partial - Semi-Finished 
+- H = Partial - Unknown Finish
+- C = Full - Unfinished
+- A = Full - Finished
+- N = No Basement
+- E = Partial - Finished
+- J = Unknown Size - Unfinished
+- G = Partial - Unfinished
+- B = Full - Semi-Finished
+- I = Unknown Size - Finished 
 
-"general_construction"
-A = Common brick 
-B = Brick and Siding
-E = Stone
-C = Frame and siding
-F = Stucco/Cement
-G = Other/Mix
-H = Brick and stucco
-J = Stone/stucco
-I = Stucco and siding
-D = Frame and shingle
 
-"type_heater"
-A = Hot air (ducts)
-B = Hot water (radiators or baseboards)
-G = Radiant
-N = None
-C = Electric baseboard
-E = Other
-D = Outside heat pump
+#### Category_code:
+- 1 = Single Family
+- 2 = Multi Family
+- 3 = Mixed Use
+- 4 = Commercial
+- 5 = Industrial
+- 6 = Vacant Land
 
-"view_type"
-I = Typical/Other
-A = Cityscape / Skyline
-C = Park / Green Area 
-D = Commercial 
-N = Not Applicable
-H = Industrial
-E = Edifice / Landmark 
-B = Flowing Water
+#### General_construction:
+- A = Common brick 
+- B = Brick and Siding
+- E = Stone
+- C = Frame and siding
+- F = Stucco/Cement
+- G = Other/Mix
+- H = Brick and stucco
+- J = Stone/stucco
+- I = Stucco and siding
+- D = Frame and shingle
+
+#### Type_heater
+- A = Hot air (ducts)
+- B = Hot water (radiators or baseboards)
+- G = Radiant
+- N = None
+- C = Electric baseboard
+- E = Other
+- D = Outside heat pump
+
+#### view_type
+- I = Typical/Other
+- A = Cityscape / Skyline
+- C = Park / Green Area 
+- D = Commercial 
+- N = Not Applicable
+- H = Industrial
+- E = Edifice / Landmark 
+- B = Flowing Water
 
 ## Feature Engineering
 New features were engineered to enhance the model's predictive capability. This included creating interaction terms, transforming variables, and extracting meaningful information like area-to-room ratio or property age. Categorical variables were converted into dummy variables, and continuous variables were appropriately transformed.
